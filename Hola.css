@@ -1,0 +1,14 @@
+
+	
+body{
+
+	background-color:  black;
+	color: white;
+	/*background:         linear-gradient(90deg, #e75053 10%, #f9d423 90%);
+	background: linear-gradient(to bottom right, black, white);
+	background: -webkit-linear-gradient(90deg, #e75053 10%, #f9d423 90%);
+	background:    -moz-linear-gradient(90deg, #e75053 10%, #f9d423 90%);
+	background:     -ms-linear-gradient(90deg, #e75053 10%, #f9d423 90%);
+	background:      -o-linear-gradient(90deg, #e75053 10%, #f9d423 90%);
+	background:         linear-gradient(90deg, #e75053 10%, #f9d423 90%);*/
+}

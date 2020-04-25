@@ -1,0 +1,21 @@
+#blog h3, h4{/*A las etiquetas h3 y h4*/
+	text-align: center;/*Centrar texto*/
+}
+
+#blog .contenedor{/*contendordel blog*/
+	display: flex;/*en una sola linea*/
+	justify-content: center;/*centrado*/
+	flex-wrap: wrap;/*Para que se bajen si no caben*/
+}
+
+#blog article{/*los articulos del blog*/
+   margin: 15px;/*Margen*/
+}
+
+#blog img{/*imagenes del blog*/
+	width: 180px;/*ancho*/
+	height: 180px;
+	max-width: 280px;/*Maximo dde */
+	border: 3px solid black;/*blanco que mida 7px*/
+	
+}

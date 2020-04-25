@@ -1,0 +1,103 @@
+#menu-bar{/*Vamos allamar al input*/
+	display: none;/**/
+}
+
+header{/**/
+	width: 100%;/*Ancho*/
+	height: 50px;/*Alto*/
+	background: black;/*Color gris oscuro*/
+	color: white;/*Color del texto blanco*/
+
+	position: fixed;/*Para que el menu se quede pegado*/
+	top: 0;/**/
+	left: 0;/**/
+	z-index: 100;/*Para que este siempre por delante de los demas elementos*/
+}
+
+.contenedor{/**/
+	width: 98%;/*Ancho*/
+	margin: auto;/*Paraque este centrado*/
+}
+
+h1{/**/
+	float: left;/*Para que flote*/
+}
+
+header .contenedor{/*Solo al contenedor que esta en el header*/
+	display: table;/*Para limpiarlos float*/
+
+}
+
+header label{/*Al label que esta dentro del header que tiene el icono del menu */
+	float: right;/*Para que flote */
+	font-size: 28px;/*Hacer grande el icono*/
+	margin: 6px 0;/*Margen 6 arriba y 0 a los costados*/
+	cursor: pointer;/*Para que al pasar por el icono sea una manita*/
+}
+.menu{/**/
+	position: absolute;/**/
+	top: 50px;/*Para que comienze desde abajo*/
+	left: 0;/*Para que comienze desde la esquina*/
+	width: 100%;/*ancho*/
+	height: 100vh;/*Para que ocupe siempre el 100% del alto de la ventana*/
+	/*background: rgba(51,51,51,0.9);/*color de la barra*/
+	background: black;
+	transition: all 0.5s;/*Para que veamos como se desplaza el menu*/
+	transform: translateX(-100%);/*De manera horizontal*/
+
+}
+
+.menu a{/*Solo a las a del menu*/
+	display: block;/*Una en cada fila*/
+	color: white;/**/
+	height: 50px;/*Altura*/
+	text-decoration: none;/**/
+	padding: 20px;/*Para que se separede la esquina*/
+	border-bottom: 1px solid rgba(255,255,255,0.5);/*Para las lineas que las van a separar*/
+}
+
+.menu_desplegable div button{
+display: block;/*Una en cada fila*/
+	color: white;/**/
+	height: 50px;/*Altura*/
+	text-decoration: none;/**/
+	padding: 15px;/*Para que se separede la esquina*/
+	border-bottom: 1px solid rgba(255,255,255,0.55);/*Para las lineas que las van a separar*/	
+}
+
+.contenido_desplegable a{
+	display: block;/*Una en cada fila*/
+	color: white;/**/
+	height: 50px;/*Altura*/
+	text-decoration: none;/**/
+	padding: 15px;/*Para que se separede la esquina*/
+	border-bottom: 1px solid rgba(255,255,255,0.55);/*Para las lineas que las van a separar*/	
+}
+
+.menu a:hover{/*Para cuando pasa el mouse por las a*/
+	/*background: rgba(255,255,255,0.5);/*Sea un color blanco transparente*/
+	background-color: rgba(0,100,1000,0.20);
+}
+
+#menu-bar:checked ~ .menu{/*Para cuando el input este seleccionado aparezca o desaparezca elmenu*/
+transform: translateX(0%);/*Para que funcione el menu se va o viene*/
+}
+
+@media (min-width: 1024px){/*Apartir de tamaño Escritorio*/
+	.menu{/**/
+		position: static;/*quitar absolute*/
+		width: auto;/**/
+		height: auto;/**/
+		transform: translateX(0%);/*De -100 a 0*/
+		float: right;/*Se pasea la derecha*/
+		display: flex;/*Sea lineal*/
+	}
+
+	.menu a{/**/
+		border: none;/*Se puedan seleccionar*/
+	}
+
+	header label{/**/
+		display: none;/*Quitar el iconode menu cuando sea 1024px*/
+	}
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAGINA PRINCIPAL</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="widht=device-widht, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css"><!-Para llamara nuestros iconos->
+	<link rel="stylesheet" type="text/css" href="css/Estilos.css"><!-Vincular a Estilos.css->
+	<script type="text/javascript" src="Practica 2.3 Responsivo.js"></script>
+	<link rel="stylesheet" type="text/css" href="Practica 2.3 Responsivo.css">
+	<link rel="stylesheet" type="text/css" href="Hola.css">
+
+</head>
+<body>
+	<header><!-Para el menu->
+		<div class="contenedor"><!-El div queva a contener todo el menu->
+			<h1 class="">My Place</h1><!-El nombre de la web->
+			<input type="checkbox" id="menu-bar"><!-Inputnos va a permitir mostrar o ocultar el menu->
+			<label class="icon-menu" for="menu-bar"></label><!-Label para que se active o desactive el input->
+
+			<nav class="menu"><!-Lo que vaa contenerel menu->
+				<a href="index.html">Inicio</a>
+				<a href="Escuela.html">Deportes</a>
+				<a href="Personas.html">Personas Importantes En Mi Vida</a>
+			<!-segmento de codigo para el menu desplegable->
+			    <div class="menu_desplegable">
+			    	<button class="boton_desplegar" onclick="mostrar2()">M&uacute;sica</button>
+			    	<div class="contenido_desplegable" id="miMenu2">
+			    <a href="Practica 2.4.html">Cantantes favoritos</a><!-Es el link al que va al dar click-> <a href="Grupos.html">Grupos favoritos</a>
+			    	</div>
+			<!-segmento de codigo para el menu desplegable->
+			    </div>
+			</nav>
+		</div>
+    </header>
+    <br>
+    <main><!-Va a ser el contenido principal de la web->
+		<section id="banner"><!-Para el banner->
+			<img src="img/Casa.jpg"><!-Imagen->
+			<div class="contenedor"><!-Contenedor->
+			<h2>Bienvenidos a mi sitio web</h2>
+			<p>Les compartire un poco sobre mi :)</p>
+			<!-a href="#"Leer mas</a->
+			</div>
+		</section>
+
+        <br>
+        <br>
+
+		<section id="info"><!-Section para el texto junto con las imagenes->
+			<h3>En esta vida todos tenemos gustos diferentes, pues estos son los mios :).</h3>
+			<br>
+			<div class="contenedor">
+				<div class="info-pet">
+					<img src="Img/Peep.png"><!-Agregar imagen->
+					<h4>Escuchar m&uacute;sica</h4>
+				</div>
+				<div class="info-pet">
+					<img src="Img/Familia2.jpg"><!-Agregar imagen->
+					<h4>Pasar tiempo con mi familia</h4>
+				</div>
+				<div class="info-pet">
+					<img src="Img/Amigos.jpg"><!-Agregar imagen->
+					<h4>Pasar tiempo con amigos</h4>
+				</div>
+				<div class="info-pet">
+					<img src="Img/Deporte.jpg"><!-Agregar imagen->
+					<h4>Hacer deporte</h4>
+				</div>
+			</div>
+		</section>
+	</main>
+	<br>
+	<br>
+
+	<footer><!La parte de los iconos->
+		<div class="contenedor">
+			<p class="copy">Yañez Garcia Cinthia &copy; 24/04/2020</p><!-Parrafo->
+			<div class="sociales">
+				<!-a class="icon-facebook" href="https://www.facebook.com/cinthia.yanezgarcia.54"</a<!-LLama al icono facebook->
+				<!-a class="icon-twitter" href=""</aLLama al icono twitter->
+				<a class="icon-instagram" href="https://www.instagram.com/cynde_15_x/"></a><!-LLama al icono instagram->
+				<a class="icon-facebook" href="https://www.facebook.com/cinthia.yanezgarcia.54"></a>
+				<a class="icon-instagram" href="https://www.instagram.com/cinthi_15_/"></a>
+				<!-a class="icon-googleplus" href=""</a<!-LLama al icono googleplus->
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

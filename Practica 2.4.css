@@ -1,0 +1,113 @@
+*{/*el (*) es un selector universal el cual afecta a todos los elementos o etiquetas html*/
+	box-sizing: border-box;
+	background-color: rgb(0,0,0);/*Utilizado para cambiar el color de todas las etiquetas html*/
+}
+.miSlider{/*Selector (.miSlider) afecta a la class "miSlider"*/
+	display: none;/* se suele utilizar para esconder elementos */
+}
+
+p{
+	color: white;
+	text-align: center; 
+}
+
+}
+body{
+	font-family: Verdana, sans-serif;/*(font-family:)establece la fuente o tipo de letra con la que se
+	 muestra el texto*/
+	/*(sans-serif)detalles adicionales en los bordes de las letras*/
+}
+img{
+	 vertical-align: middle; /*Permite posicionar elementos inline en distintas alineaciones 
+	 verticales respecto a una línea, en este caso a una imagen*/
+}
+.contenedor-slider{/*Selector (.contenedor-slider) afecta a la class ".contenedor-slider"*/
+	max-width: 700px;/* los valores en porcentaje toman como referencia la anchura del elemento*/
+	position: relative;/*(position)especifica cómo un elemento es posicionado en el documento*/
+	margin: auto;/*La propiedad margin es tan poderosa que permite establecer uno, dos, tres o los cuatro
+	 márgenes de forma simultánea.*/
+}
+/*Formato a las felchitas*/
+.previa, .siguiente{ /*Selectores (.previa, .siguiente) afectan a las flechas ".previa, .siguiente"*/
+	cursor: pointer; /*sirve para que el cursorsea una manita*/
+	position: absolute;
+	top: 50%;/*permite desplazar un elemento respecto a su posición original tomando como referencia
+	 el borde superior del elemento*/
+	margin: auto;/*La propiedad margin es tan poderosa que permite establecer uno, dos, tres o los cuatro
+	 márgenes de forma simultánea.*/
+	padding: 16px;/*es un atajo para evitar la asignación de cada lado por separado*/
+	margin-top: -22px; /*permite desplazar un elemento respecto a su posición original del margen tomando
+	 como referencia el borde superior del elemento*/
+	color: white;/*cambia el color*/
+	font-weight: bold;/*(font-weight)permite establecer el grosor con el que se muestran las letras del
+	 texto*/
+	font-size: 18px; /*permite establecer el tamaño del texto de forma relativa mediante las palabras 
+	clave larger y smaller */
+	transition: 0.6s ease;/*(transition) Permite definir la transición entre dos estados de un elemento*/
+	border-radius: 0 3px 3px 0;/*permite a los desarrolladores Web definir qué tan redondeadas serán las
+	 esquinas.*/
+	background-color: rgba(169,169,169);/*Para cambiarel fondo de las flechitas*/
+}
+.siguiente{
+	right: 0;/*permite desplazar un elemento respecto a su posición original tomando como referencia el
+	 borde derecho del elemento*/
+	border-radius: 3px 0 0 3px; /*permite a los desarrolladores Web definir qué tan redondeadas serán las
+	 esquinas.*/
+}
+.siguiente:hover, .previa:hover{/*(hover)coincide cuando el usuario interactúa con un elemento con un dispositivo 
+señalador,pero no necesariamente lo activa.Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor*/
+	background-color: rgba(0,0,0,0.8);
+}
+.titulo{
+	color: rgba(200,200,200,0.9);/*cambiar el color*/
+	font-size: 15px;/*permite establecer el tamaño del texto de forma relativa mediante las palabras
+	 clave larger y smaller*/
+	padding: 8px 12px;/*es un atajo para evitar la asignación de cada lado por separado*/
+	position: absolute;
+	bottom: 8px;/*permite desplazar un elemento respecto a su posición original tomando como referencia el borde 
+ inferior del elemento sólo afecta a los elementos cuya propiedad position tenga un valor de relative , absolute o fixed*/
+	width: 100%;
+	text-align: center;/*alinear el texto*/
+}
+.numeroTexto{
+	color: #f2f2f2;/*cambiar el color*/
+	font-size: 12px;/*permite establecer el tamaño del texto de forma relativa mediante las palabras clave larger y smaller*/
+	padding: 8px 12px;/*es un atajo para evitar la asignación de cada lado por separado*/
+	position: absolute;
+	top: 0;/*permite desplazar un elemento respecto a su posición original tomando como referencia
+el borde superior del elemento*/
+}
+.puntito{
+	cursor: pointer;/*sirve para que el cursorsea una manita*/
+	height: 15px;/*El uso de porcentajes para definir la altura de los elementos no es tan sencillo
+como cuando se utiliza para definir su anchura*/
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;/*permite a los desarrolladores Web definir qué tan redondeadas serán las esquinas.*/
+	display: inline-block;/*(display)es la propiedad más importante para controlar estructuras*/
+	transition: background-color 0.6s ease;/*(transition) Permite definir la transición entre dos estados de un elemento*/
+}
+.puntito:hover, .activo{
+	background-color: #717171;/*cambiar color de los punitos*/
+}
+.desvanecido{
+	-webkit-animation-name:fade;
+	-webkit-animation-duration:15%;/*Para la duracion*/
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{/*permite a los autores controlar los pasos intermedios en una
+secuencia de animación CSS mediante el establecimiento de keyframes*/
+    from{opacity: .4}/*opacity define la transparencia de un elemento, esto es, 
+    en qué grado se superpone el fondo al elemento*/
+    to{opacity: 1}
+}
+@keyframes fade{
+  from{opacity: .4}/*opacity define la transparencia de un elemento, esto es, en qué grado se superpone el fondo al elemento*/
+    to{opacity: 1}/*opacity define la transparencia de un elemento, esto es, en qué grado se superpone el fondo al elemento*/	
+}
+@media only screen and (max-width: 300px){
+	.previa, .siguiente, .titulo{font-size: 11px;}/*permite establecer el tamaño del texto de
+	 forma relativa mediante las palabras clave larger y smaller */
+}

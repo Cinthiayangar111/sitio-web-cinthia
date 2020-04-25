@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(Menu.css);
+@import url(Banner.css);
+@import url(Blog.css);
+@import url(Info.css);
+/*1 Importa una fuente
+2 llama al menu.css
+3 llama al Banner.css
+4 Llama al Blog.css
+y llama a info.css*/
+
+*{
+	margin: 0;/**/
+	padding: 0;/**/
+	box-sizing: border-box;/*Para cuando demos padding o border a un elemento sean dentro del mismo modelo de caja y no de salga*/
+	background-clip: blue;
+
+
+}
+
+body{/*Cuerpo*/
+	font-family: 'Open Sans', sans-serif;/*Para integrar los fonts*/
+}
+
+header{/**/
+	width: 100%;/*Ancho*/
+	height: 50px;/*Alto*/
+	background: black;/*Color gris oscuro*/
+	color: white;/*Color del texto blanco*/
+
+	position: fixed;/*Para que el menu se quede pegado*/
+	top: 0;/**/
+	left: 0;/**/
+	z-index: 100;/*Para que este siempre por delante de los demas elementos*/
+}
+
+.contenedor{/**/
+	width: 98%;/*Ancho*/
+	margin: auto;/*Paraque este centrado*/;
+}
+
+h1{/**/
+	float: left;/*Para que flote*/
+}
+
+header .contenedor{/*Solo al contenedor que esta en el header*/
+	display: table;/*Para limpiarlos float*/
+
+
+}
+
+section{/**/
+	width: 100%;/*ancho*/
+	margin-bottom: 25px;/*Para cuando haya mas contenido abajo lo empuje*/
+}
+
+#Bienvenidos{/*A la parte bienvenidos*/
+     text-align: center;/*Centrar el parrafo*/
+}
+
+footer .contenedor{/**/
+	display: flex;/*En una sola linea*/
+	flex-wrap: wrap;/**/
+	justify-content: center;/*Centrar el parrafo*/
+	padding-bottom: 25px;/*parrafo*/
+}
+
+.copy{/*El parrafo*/
+	font-size: 20px;/*Tamaño de la letra*/
+}
+
+.sociales {/*Sociales*/
+	width: 180%;/*Ancho*/
+	text-align: center;/*Centrar socisles*/
+	font-size: 28px;/*Tamaño de socisles*/
+}
+
+.sociales a{/*A los iconos*/
+	color: #333;/*color de iconos*/
+	text-decoration: none;/*Quitar subrayado*/
+
+}
+
+@media(min-width: 768px){/*Tablet*/
+	.sociales {/*Iconos*/
+		width: auto;/*Los iconos esten en una sola linea*/
+	}
+
+	footer .contenedor{/* a laprte contenedor del footer*/
+		justify-content: space-between;/*Se vayan a los extremos y se separen*/
+	}
+}
+
+@media(min-width: 1024px){/*Tamaño Escritorio*/
+	.contenedor {/*en el contendeor*/
+		width: 1000px;/*Para que se separe de las esquinas*/
+	}
+}
+
+html{/*afecta a todos los elementos de la etiqueta html*/
+	background: url("Otra.jpg") no-repeat;
+}
+
+main section h2{
+	color: black;
+}

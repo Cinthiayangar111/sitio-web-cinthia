@@ -1,0 +1,40 @@
+#info{/*info*/
+	background: black;/*Cambiar color del fondo*/
+	color: white;/*letra*/
+	text-align: center;/*alinear texto */
+	padding: 20px;/*Arriba y abajo exista un espacio*/
+
+}
+
+#info .contenedor{/**/
+	display: flex;/*En una sola linea*/
+	flex-wrap: wrap;/*En una linea*/
+	justify-content: center;/*Centrar las imagenes*/
+}
+
+.info-pet{/*contiene las imagenes*/
+	margin: 20px;/*margen de la parte de las imageness*/
+}
+
+#info h3{
+	color: white;
+}
+
+.info-pet img {/**/
+	width: 180px;/*ancho*/
+	height: 180px;/*alto*/
+	border-radius: 50%;/*borde en forma circular*/
+	border: 7px solid #D0D3D4;/*blanco que mida 7px*/
+}
+
+@media (min-width: 480px){/*Apartir de tamaño movil*/
+	.info-pet{/*A las iamgenes*/
+		width: 40%;/*se acomode en dos columnas*/
+	}
+}
+
+@media (min-width: 1024px) {/*Tamañoescritorio*/
+	.info-pet{/*A las imagenes*/
+		width: auto;/*ancho automatico se van a colocar en una sola linea*/
+	}
+}

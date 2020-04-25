@@ -1,0 +1,72 @@
+.barra_menus{ /*Selector (.barra_menus) afecta a la class "barra_menus"*/
+	overflow: hidden;/* especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+	background-color: rgba(1,1,0.3);/*Utilizado para cambiar el color de todas las etiquetas html*/
+	font-family: sans-serif;/*(font-family:)establece la fuente o tipo de letra con la que se
+	 muestra el texto*/
+	/*(sans-serif)detalles adicionales en los bordes de las letras*/
+}
+.barra_menus a{ /*Selector (.barra_menus) afecta a la class "barra_menus" de solamente la etiquta a*/
+	float: left;
+	font-size: 10px;/*permite establecer el tamaño del texto de forma relativa mediante las palabras 
+	clave larger y smaller */
+	color: white;/*Cambiar al color blanco*/
+	text-align: center;/*Linar el texto al centro*/
+	padding: 14px 16px; /*es un atajo para evitar la asignación de cada lado por separado*/
+	text-decoration: none; /*Decorar el texto*/
+}
+.menu_desplegable{ /*Selector (.menu_desplegable) afecta a la class "menu_desplegable"*/
+	float: left;/* sirve para alinear un elemento, haciendo que el texto de alrededor del mismo se agrupe entorno a dicho elemento*/
+	overflow: hidden;/* especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+}
+.menu_desplegable, .boton_desplegar{ /*Selector (.menu_desplegable) afecta a la class "menu_desplegable"  y en el selector .boton_desplegar*/
+	cursor: pointer; /*sirve para que el cursorsea una manita*/
+	font-size: 16px; /*permite establecer el tamaño del texto de forma relativa mediante las palabras 
+	clave larger y smaller */
+	border: none;/*Modificar el borde*/
+	outline: none;/* se utilizan para establecer de forma abreviada el valor de una o más propiedades individuales*/
+	color: white;/*Cambiar el color */
+	padding: 7px 19px; /*es un atajo para evitar la asignación de cada lado por separado*/
+	background-color: rgba(0,0,0,0); /*Utilizado para cambiar el color de todas las etiquetas html*/
+	font-family: inherit; /*(font-family:)establece la fuente o tipo de letra con la que se
+	 muestra el texto*/
+	margin: 0; /*Modificar el margen*/
+}
+.barra_menus a:hover, .menu_desplegable:hover,.boton_desplegar:hover{
+	/*background-color: rgba(0,100,1000,0.20); /*Utilizado para cambiar el color de todas las etiquetas html*/
+	background-color: rgba(0,100,1000,0.20);
+}
+.contenido_desplegable{/*Selector (.contenido_desplegable) afecta a la class "contenido_desplegable*/
+	display: none; /*(display)es la propiedad más importante para controlar estructuras*/
+	position: absolute; /*Cambiar la posicion*/
+	/*background-color: #f2f2f2;*/
+	background-color: black; /*Cambiarel color*/
+	min-width: 160px;/* se usa para determinar la anchura mínima de un elemento. Previene que la propiedad
+width pueda ser inferior que min-width */
+	box-shadow: /*permite proyectar una sombra difuminada desde el marco de casi cualquier elemento*/
+0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;/*Indice*/
+}
+.contenido_desplegable a{ /*Selector (.contenido_desplegable) afecta a la class "contenido _desplegable* 
+ensolamente la etiqueta a*/
+	float: none;/*Del tipo flotante*/
+	color: white;/*Cambiar el color*/
+	padding: 12px 16px; /*es un atajo para evitar la asignación de cada lado por separado*/
+	text-decoration: none;/*Cambiar la decoracion del texto*/
+	display: block; /*(display)es la propiedad más importante para controlar estructuras*/
+	text-align: center; /*Linar el texto al centro*/
+}
+.contenido_desplegable a:hover{/*Selector (.contenido_desplegable) afecta a la class "contenido_desplegable*/
+	/*background-color: rgba(0,100,1000,0.20);*/
+	/*background-color: #ddd;*/
+}
+.mostrar{/*Selector (.mostrar) afecta a la class "mostrar*/
+	display: block; /*(display)es la propiedad más importante para controlar estructuras*/
+}
+html{/*afecta a todos los elementos de la etiqueta html*/
+	background: url('Fondo2.jpg') no-repeat;
+	min-height: 100%;/*se utiliza para definir la altura mínima de un elemento dado. Impide que el valor de la propiedad height 
+	llegue a ser más pequeña que la especificada en la altura mínima*/
+	background-size: cover; /*La imagen de fondo representa al tamaño especificado. si el background-size
+es contain o cover : La imagen es renderizada, preservando su proporción propia, en el tamaño mayor contenido dentro de, o cubriendo,
+el área de posicionamiento de fondo*/
+}
